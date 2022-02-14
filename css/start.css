@@ -1,0 +1,27 @@
+body{
+  width: 100vw;
+  height: 100vh;
+}
+/* ----------
+loading
+---------- */
+.loading_wrapper {
+  background-color: lightblue;
+}
+.loading_container{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.loading_container h1{
+  text-align: center;
+}
+
+/* ----------
+start
+---------- */
+.start_wrapper{
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+}
