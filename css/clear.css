@@ -5,7 +5,7 @@
 
 .clear_share{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .clear_share button{
