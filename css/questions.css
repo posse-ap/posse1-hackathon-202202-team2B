@@ -1,3 +1,22 @@
+
+span{
+  font-weight: bold;
+}
+
+.questions_correct, .questions_incorrect{
+  text-align: center;
+}
+
+.questions_correct span{
+  color: red;
+}
+
+.questions_incorrect span{
+  color: blue;
+}
+
+
+
 /* 全体 */
 main {
   height: 100vh;
@@ -39,3 +58,4 @@ main {
 .questions_hint_quit_container button {
   width: 50%;
 }
+
