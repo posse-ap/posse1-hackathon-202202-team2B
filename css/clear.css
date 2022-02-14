@@ -4,15 +4,23 @@
 body{
     font-family: 'Sawarabi Mincho', sans-serif;
     background-color: black;
+    background-image: url('../img/clear.jpg');
+    background-size: cover;
 }
 
 .clear_ {
-    height: 100vh;
+    height: 900px;
+    position: relative;
 }
 .clear_message{
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
     text-align: center;
-    color: #C1C4CB;
+    color: #fff;
     margin: 100px 0;
+    margin-top: 500px;
 }
 
 .clear_message p{
@@ -22,8 +30,8 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 .title {
-    height: 55px;
-    font-size: 50px;
+    height: 110px;
+    font-size: 100px;
     display: flex;
     overflow: hidden;
     color: #C1C4CB;
@@ -88,9 +96,28 @@ body{
     transition-delay: 0.82s;
 }
 
+.clear_comment{
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;
+}
+.under{
+    padding-bottom: 10px;
+    border-bottom: solid 0.5px #ddd;
+}
+
 .clear_share{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
 }
 
 .clear_share button{
