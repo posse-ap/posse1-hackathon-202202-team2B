@@ -64,16 +64,62 @@ main {
   display: none;
   text-align: center;
 }
-
 .hint_ h3{
   font-size: x-large;
   font-weight: bold;
   color: red;
-  margin: 50px;
+  margin: 5%;
 }
 .hint_ p{
   font-size: large;
-  margin: 50px;
+  margin-bottom: 5%;
+}
+.hint_buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hint_try_again{
+  border: none;
+  border-radius: 10px;
+  background: #4676D7;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+.hint_go_profile{
+  border: none;
+  border-radius: 10px;
+  background: #4676D7;
+  padding: 16px 32px;
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+.hint_go_profile a {
+  text-decoration: none;
+  color: #fff;
+}
+/* 諦める画面 */
+.quit_{
+  display: none;
+  text-align: center;
+}
+
+.quit_ h3{
+  font-size: x-large;
+  font-weight: bold;
+  color: red;
+  margin: 5%;
+}
+.quit_ p{
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 5%;
 }
 
 
