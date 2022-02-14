@@ -42,10 +42,26 @@ main {
   align-items: center;
 }
 .questions_submit_container input {
-  width: 50%;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 0 7px #1abc9c;
+  border: 1px solid #1abc9c;
+  padding: 8px 16px;
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 3%;
 }
 .questions_submit_container button {
-  width: 50%;
+  border: 5px;
+  border-radius: 30px;
+  background: #4676D7;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 3%;
 }
 
 /* ヒント・諦めるボタン画面 */
@@ -55,7 +71,19 @@ main {
   align-items: center;
 }
 .questions_hint_quit_container button {
-  width: 50%;
+  width: 20%;
+  border: 5px;
+  border-radius: 10px;
+  background: #4676D7;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 3%;
+}
+.questions_hint a{
+  color: red;
 }
 
 /* ヒント画面 */
@@ -81,13 +109,17 @@ main {
 .hint_try_again{
   border: none;
   border-radius: 10px;
-  background: #4676D7;
+  background: #e60b0b;
   color: #fff;
   padding: 8px 16px;
   font-size: large;
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 5%;
+}
+.hint_try_again a{
+  text-decoration: none;
+  color: #fff;
 }
 .hint_go_profile{
   border: none;
