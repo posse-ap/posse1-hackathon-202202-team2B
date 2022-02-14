@@ -20,7 +20,11 @@ function judgeAnswer(){
 
   if(document.getElementById("input_answer").value == answer){
       document.getElementById("check_correct").style.display = "block";
+      document.getElementById("hint").style.display = "none";
+      document.getElementById("quit").style.display = "none";
   }else{
       document.getElementById("check_incorrect").style.display = "block";
+      document.getElementById("hint").style.display = "block";
+      document.getElementById("quit").style.display = "block";
   }
 }
