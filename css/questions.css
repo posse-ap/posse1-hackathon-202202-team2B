@@ -78,3 +78,6 @@ main {
 
 
 
+.notClick{
+  pointer-events: none;
+}

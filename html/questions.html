@@ -19,23 +19,25 @@
     </div>
 
     <div class="questions_submit_container">
-      <input type="text">
-      <button>回答</button>
+      <input type="text" id="input_answer">
+      <button class="get_answer" onclick="judgeAnswer()">回答</button>
     </div>
 
-    <div class="questions_correct">
-      <p><span>正解</span>です！！</p>
+    <div class="questions_correct" id="check_correct">
+      <p id="correct"><span>正解</span>です！！</p>
       <a href="">次へ</a>
     </div>
+    
+    <div class="questions_incorrect" id="check_incorrect">
+      <p id="incorrect"><span>不正解</span>です… Try again</p>
 
-    <div class="questions_incorrect">
-      <p><span>不正解</span>です… Try again</p>
     </div>
 
     <div class="questions_hint_quit_container">
       <button class="questions_hint">ヒント</button>
       <button class="questions_quit">諦める</button>
     </div>
+
   </main>
   <!-- こっから下がヒントと諦める押した時に表示される画面 -->
   <div class="hint_">
@@ -46,9 +48,6 @@
     <button><a href="">さらにヒントが欲しい方はPOSSEプロフィールへGO!</a></button>
   </div>
   <div class="quit_"></div>
-
-
-
 
   <script src="../js/questions.js"></script>
 </body>
