@@ -1,3 +1,4 @@
+
 span{
   font-weight: bold;
 }
@@ -13,3 +14,48 @@ span{
 .questions_incorrect span{
   color: blue;
 }
+
+
+
+/* 全体 */
+main {
+  height: 100vh;
+  gap: 10%;
+}
+
+/* 問題画面 */
+.questions_question_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.questions_question_container p {
+  text-align: center;
+}
+.questions_question_container img {
+  width: 30%;
+}
+
+/* 提出画面 */
+.questions_submit_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.questions_submit_container input {
+  width: 50%;
+}
+.questions_submit_container button {
+  width: 50%;
+}
+
+/* ヒント・諦めるボタン画面 */
+.questions_hint_quit_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.questions_hint_quit_container button {
+  width: 50%;
+}
+
