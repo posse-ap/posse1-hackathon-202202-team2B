@@ -13,53 +13,154 @@
 <body>
 
   <main id="main">
-    <div class="questions_question_container">
-      <p>ここに問題文</p>
-      <img src="../img/sample.jpg" alt="問題内容">
-    </div>
+    <section id="question1">
+      <div class="questions_question_container">
+        <p>ここに問題文</p>
+        <img src="../img/sample1.jpeg" alt="問題内容" id="image">
+      </div>
+  
+      <div class="questions_submit_container">
+        <input type="text" id="input_answer">
+        <button class="get_answer" onclick="judgeAnswer1()">回答</button>
+      </div>
+  
+      <div class="questions_correct" id="check_correct">
+        <p id="correct"><span>正解</span>です！！</p>
+        <button onclick="nextQuestion1()">次へ</button>
+      </div>
+      
+      <div class="questions_incorrect" id="check_incorrect">
+        <p id="incorrect"><span>不正解</span>です… Try again</p>
+  
+      </div>
+  
+      <div class="questions_hint_quit_container">
+        <button class="questions_hint" id="hint">ヒント</button>
+        <button class="questions_quit" id="quit">諦める</button>
+      </div>
+  
+      <!-- こっから下がヒントと諦める押した時に表示される画面 -->
+      <div class="hint_">
+        <h3>ヒント！！！</h3>
+        <p>aaaaaaaaaaaaaaaaaaaaaa<br>
+          bbbbbbbbbbbbbbbbbbbbbb
+        </p>
+        <div class="hint_buttons">
+          <button class="hint_try_again">TRY AGAIN</button>
+          <button class="hint_go_profile"><a href="https://twitter.com/posse_program">さらにヒントが欲しい方はPOSSEプロフィールへGO!</a></button>
+        </div>
+      </div>
+    
+      <div class="quit_">
+        <h3>よく頑張ったね、、、</h3>
+        <p>シェアして友達に助けて助けてもらおう！</p>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-text="🌀POSSEからの挑戦状苦戦中🌀" data-hashtags="POSSEからの挑戦状"
+          data-via="posse_program" data-related="posse_program"
+          data-url="https://posse-ap.github.io/posse1-hackathon-202202-team2B/html/" class="twitter-share-button"
+          data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </section>  
 
-    <div class="questions_submit_container">
-      <input type="text" id="input_answer">
-      <button class="get_answer" onclick="judgeAnswer()">回答</button>
-    </div>
+    <section id="question2">
+      <div class="questions_question_container">
+        <p>ここに問題文</p>
+        <img src="../img/sample2.jpeg" alt="問題内容" id="image">
+      </div>
+  
+      <div class="questions_submit_container">
+        <input type="text" id="input_answer2">
+        <button class="get_answer" onclick="judgeAnswer2()">回答</button>
+      </div>
+  
+      <div class="questions_correct" id="check_correct2">
+        <p id="correct"><span>正解</span>です！！</p>
+        <button onclick="nextQuestion2()">次へ</button>
+      </div>
+      
+      <div class="questions_incorrect" id="check_incorrect2">
+        <p id="incorrect"><span>不正解</span>です… Try again</p>
+  
+      </div>
+  
+      <div class="questions_hint_quit_container">
+        <button class="questions_hint" id="hint2">ヒント</button>
+        <button class="questions_quit" id="quit2">諦める</button>
+      </div>
+  
+        <!-- こっから下がヒントと諦める押した時に表示される画面 -->
+      <div class="hint_">
+        <h3>ヒント！！！</h3>
+        <p>aaaaaaaaaaaaaaaaaaaaaa<br>
+          bbbbbbbbbbbbbbbbbbbbbb
+        </p>
+        <div class="hint_buttons">
+          <button class="hint_try_again">TRY AGAIN</button>
+          <button class="hint_go_profile"><a href="https://twitter.com/posse_program">さらにヒントが欲しい方はPOSSEプロフィールへGO!</a></button>
+        </div>
+      </div>
+    
+      <div class="quit_">
+        <h3>よく頑張ったね、、、</h3>
+        <p>シェアして友達に助けて助けてもらおう！</p>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-text="🌀POSSEからの挑戦状苦戦中🌀" data-hashtags="POSSEからの挑戦状"
+          data-via="posse_program" data-related="posse_program"
+          data-url="https://posse-ap.github.io/posse1-hackathon-202202-team2B/html/" class="twitter-share-button"
+          data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </section>
 
-    <div class="questions_correct" id="check_correct">
-      <p id="correct"><span>正解</span>です！！</p>
-      <button href="">次へ</button>
-    </div>
-
-    <div class="questions_incorrect" id="check_incorrect">
-      <p id="incorrect"><span>不正解</span>です… Try again</p>
-
-    </div>
-
-    <div class="questions_hint_quit_container">
-      <button class="questions_hint" id="hint">ヒント</button>
-      <button class="questions_quit" id="quit">諦める</button>
-    </div>
+    <section id="question3">
+      <div class="questions_question_container">
+        <p>ここに問題文</p>
+        <img src="../img/sample3.jpeg" alt="問題内容" id="image">
+      </div>
+  
+      <div class="questions_submit_container">
+        <input type="text" id="input_answer3">
+        <button class="get_answer" onclick="judgeAnswer3()">回答</button>
+      </div>
+  
+      <div class="questions_correct" id="check_correct3">
+        <p id="correct"><span>正解</span>です！！</p>
+        <button onclick="nextQuestion3()">次へ</button>
+      </div>
+      
+      <div class="questions_incorrect" id="check_incorrect3">
+        <p id="incorrect"><span>不正解</span>です… Try again</p>
+  
+      </div>
+  
+      <div class="questions_hint_quit_container">
+        <button class="questions_hint" id="hint3">ヒント</button>
+        <button class="questions_quit" id="quit3">諦める</button>
+      </div>
+  
+        <!-- こっから下がヒントと諦める押した時に表示される画面 -->
+      <div class="hint_">
+        <h3>ヒント！！！</h3>
+        <p>aaaaaaaaaaaaaaaaaaaaaa<br>
+          bbbbbbbbbbbbbbbbbbbbbb
+        </p>
+        <div class="hint_buttons">
+          <button class="hint_try_again">TRY AGAIN</button>
+          <button class="hint_go_profile"><a href="https://twitter.com/posse_program">さらにヒントが欲しい方はPOSSEプロフィールへGO!</a></button>
+        </div>
+      </div>
+    
+      <div class="quit_">
+        <h3>よく頑張ったね、、、</h3>
+        <p>シェアして友達に助けて助けてもらおう！</p>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-text="🌀POSSEからの挑戦状苦戦中🌀" data-hashtags="POSSEからの挑戦状"
+          data-via="posse_program" data-related="posse_program"
+          data-url="https://posse-ap.github.io/posse1-hackathon-202202-team2B/html/" class="twitter-share-button"
+          data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </section>    
 
   </main>
-  <!-- こっから下がヒントと諦める押した時に表示される画面 -->
-  <div class="hint_">
-    <h3>ヒント！！！</h3>
-    <p>aaaaaaaaaaaaaaaaaaaaaa<br>
-      bbbbbbbbbbbbbbbbbbbbbb
-    </p>
-    <div class="hint_buttons">
-      <button class="hint_try_again">TRY AGAIN</button>
-      <button class="hint_go_profile"><a href="https://twitter.com/posse_program">さらにヒントが欲しい方はPOSSEプロフィールへGO!</a></button>
-    </div>
-  </div>
-
-  <div class="quit_">
-    <h3>よく頑張ったね、、、</h3>
-    <p>シェアして友達に助けて助けてもらおう！</p>
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-text="🌀POSSEからの挑戦状苦戦中🌀" data-hashtags="POSSEからの挑戦状"
-      data-via="posse_program" data-related="posse_program"
-      data-url="https://posse-ap.github.io/posse1-hackathon-202202-team2B/html/" class="twitter-share-button"
-      data-show-count="false">Tweet</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
 
   <script src="../js/questions.js"></script>
 </body>
