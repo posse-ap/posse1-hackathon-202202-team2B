@@ -59,3 +59,22 @@ main {
   width: 50%;
 }
 
+/* ヒント画面 */
+.hint_{
+  display: none;
+  text-align: center;
+}
+
+.hint_ h3{
+  font-size: x-large;
+  font-weight: bold;
+  color: red;
+  margin: 50px;
+}
+.hint_ p{
+  font-size: large;
+  margin: 50px;
+}
+
+
+
