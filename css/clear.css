@@ -1,0 +1,21 @@
+.clear_message{
+    text-align: center;
+    margin: 100px 0 200px 0;
+}
+
+.clear_share{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clear_share button{
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    font-size: large;
+    box-sizing: border-box;
+    border: 1px solid #68779a;
+    background: #cbe8fa;
+    cursor: pointer;    
+}
+
