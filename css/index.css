@@ -11,13 +11,13 @@ loading
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background-color: lightblue;
+  background-color: rgb(48, 59, 70);
   text-align:center;
-  color: white;
+  color: rgb(211, 211, 211);
 }
 .loading_container{
   display: none;
-  width: 60%;
+  width: auto;
   margin: 0 auto;
   text-align: center;
   position: absolute;
@@ -30,6 +30,34 @@ loading
   font-size: 40px;
 }
 
+.loading_container h1::after{
+  font-size: 15px;
+  content: 'presents by POSSE';
+  position: absolute;
+  right: 0;
+  transform: translate(0, -100%);
+  margin-top: 60px;
+}
+
+.loading_container #click_me{
+  margin-top: 50px;
+}
+
+/* ----------
+ -click to start - の点滅
+---------- */
+.blink {
+  -webkit-animation: blink 1s ease-in-out infinite alternate;
+  animation: blink 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes blink {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
 /* ----------
 start
 ---------- */
