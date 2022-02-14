@@ -1,0 +1,15 @@
+span{
+  font-weight: bold;
+}
+
+.questions_correct, .questions_incorrect{
+  text-align: center;
+}
+
+.questions_correct span{
+  color: red;
+}
+
+.questions_incorrect span{
+  color: blue;
+}
