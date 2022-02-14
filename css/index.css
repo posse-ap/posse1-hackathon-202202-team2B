@@ -16,6 +16,7 @@ loading
   color: white;
 }
 .loading_container{
+  display: none;
   width: 60%;
   margin: 0 auto;
   text-align: center;
