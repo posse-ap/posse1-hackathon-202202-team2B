@@ -112,6 +112,55 @@ start
   line-height: 4;
   font-size: 20px;
 }
+.start_explain button{
+  padding: 10px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
 .notClick{
   pointer-events: none;
+}
+
+
+
+
+
+
+
+/* ⬇︎----------------------------------------------スマホ画面用---------------------------------------------------------⬇︎*/
+@media screen and (max-width:480px){
+  
+.loading_wrapper.-visible:before {
+  transform: translate(0, 0);
+}
+
+.loading_container{
+  top: 30%;
+}
+.loading_container h1 {
+  font-size: 30px;
+}
+.loading_container h1::after{
+  right: 15%;
+  margin-top: 70px;
+}
+
+.loading_container #click_me{
+  margin-top: 70px;
+}
+
+/* ----------
+start
+---------- */
+.start_explain{
+  top: 30%;
+  transform: translate(-50%,-50%);
+  line-height: 2;
+}
+.start_explain button{
+  width: 60%;
+  margin-top: 50px;
+  padding: 5px;
+}
 }
