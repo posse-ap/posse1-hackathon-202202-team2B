@@ -9,8 +9,8 @@ let quit_divs = document.querySelectorAll('.quit_');
 //カウントダウン画面
 $(window).on('load',function(){ //ロードされた時
   $('#main').hide();
-  $('.questions_countdown_container').delay(3000).fadeOut(3000);
-  $('#main').delay(3000).fadeIn();
+  $('.questions_countdown_container').delay(2500).fadeOut(2500);
+  $('#main').delay(2500).fadeIn();
 });
 
 
@@ -111,7 +111,7 @@ function nextQuestion2(){
 }
 
 function nextQuestion3(){
-  document.getElementById("question4").style.display = "block";
+  $("#question4").fadeIn(3500).css("display", "flex");
 }
 
 
@@ -124,3 +124,28 @@ function finalStage() {
     window.location.href = '../html/clear.html';
   }
 }
+
+$(function(){
+  $("#last_button").click(function(){
+      setTimeout(function(){
+        autoScroll(scrollY);
+      function autoScroll(y){
+          if (y<-1 || scrollY>y+100) {
+              return
+          }
+          y=y-1; // 垂直方向のスクロール量を減らす
+          scrollTo(scrollX,y);
+          setTimeout(autoScroll,1,y);
+    }},3700);
+    setTimeout(function(){
+      $(".remove1").fadeOut();
+    },4700);
+    setTimeout(function(){
+      $(".remove2").fadeOut();
+    },7250);
+    setTimeout(function(){
+      $(".remove3").fadeOut();
+    },9800);
+  });
+});
+

@@ -24,7 +24,7 @@
       <div class="questions_question_container">
         <p>Q1. ?に入る文字を答えよ</p>
         <div class="questions_content">
-          <p>じん　ー　い　＝　に<br><span>か</span>　ー　<span>い</span>　＝　ひ<br>ほとけ　ー　い　＝　?</p>
+          <p><span class="remove3">じん　ー　い　＝　に<br></span>か<span class="remove3">　ー　</span>い<span class="remove3">　＝　ひ<br>ほとけ　ー　い　＝　?</span></p>
         </div>
       </div>
   
@@ -63,7 +63,7 @@
       <div class="questions_question_container">
         <p id="questions_question2">Q2. ?に入る数字を答えよ(半角)</p>
         <div class="questions_content">
-          <p>1 = 1 , 2 = 2 , <span>3</span> = 3 <br>4 = 5 , 5 = ?</p>
+          <p><span class="remove2">1 = 1 , 2 = 2 , </span>3<span class="remove2"> = 3 <br>4 = 5 , 5 = ?</span></p>
         </div>
       </div>
   
@@ -101,7 +101,7 @@
       <div class="questions_question_container">
         <p id="questions_question3">Q3. ひらがな四文字で答えよ</p>
         <div class="questions_content">
-          <p>1,2文字目を「はご」に変えるとお正<span>月</span>飾りに、<br>3文字目を「が」に変えると血液型に、<br>3,4文字目を「かみ」に変えると動物になる</p>
+          <p><span class="remove1">,2文字目を「はご」に変えるとお正</span>月<span class="remove1">飾りに、<br>3文字目を「が」に変えると血液型に、<br>3,4文字目を「かみ」に変えると動物になる</span></p>
         </div>
       </div>
   
@@ -112,7 +112,7 @@
   
       <div class="questions_correct" id="check_correct3">
         <p id="correct"><span>正解</span>です！！</p>
-        <button onclick="nextQuestion3()">次へ</button>
+        <button onclick="nextQuestion3()" id="last_button"><a href="#question4">最後に</a></button>
       </div>
       
       <div class="questions_incorrect" id="check_incorrect3">
@@ -138,8 +138,8 @@
     <!-- 「問題はまだ終わってません」セクション -->
     <section id="question4">
       <div class="questions_question_container">
-        <p>3問クリア！！！</p>
-        <div>「問題はまだ終わってません」って言うメッセージ</div>
+        <p>---全問クリア---</p>
+        <p>「問題はまだ終わってません」って言うメッセージ</p>
       </div>
     </section>
 
