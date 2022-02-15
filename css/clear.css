@@ -4,6 +4,8 @@
 body{
     font-family: 'Sawarabi Mincho', sans-serif;
     background-color: black;
+    width: 100%;
+    height: 100vh;
     background-image: url('../img/universe.jpeg');
     background-size: cover;
 }
@@ -14,6 +16,7 @@ body{
     background-image: url('../img/clear.jpg');
     background-size: cover;
 }
+
 .clear_message{
     /* position: absolute;
     left: 50%;
@@ -113,22 +116,21 @@ body{
 }
 
 .clear_share{
+    width: 30%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: absolute;
-    bottom: 5%;
+    bottom: 30%;
     left: 50%;
     transform: translate(-50%, 0);
-
 }
 
-.clear_share button{
-    width: 120px;
+.clear_share img{
+    width: 30px;
     height: 30px;
     font-size: large;
     box-sizing: border-box;
     border: none;
-    background: #C1C4CB;
     cursor: pointer;
 }
 
@@ -214,4 +216,16 @@ body.appear .clear_{
 	100% {
 	opacity: 1;
 }
+}
+.posse_sns_links {
+  display: flex;
+  width: 250px;
+  position: absolute;
+  bottom:10%;
+  left: 40%;
+  gap: 80px;
+}
+
+.posse_sns_links img{
+  width: 80px;
 }

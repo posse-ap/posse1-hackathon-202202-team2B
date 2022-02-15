@@ -51,19 +51,24 @@ loading
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.loading_container h1 {
+.loading_container h1 img{
   display: block;
   width: auto;
   opacity: 0;
   transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s, opacity linear 3s;
 }
 
-.loading_wrapper.-visible .loading_container h1 {
+.loading_container img {
+  width: 150px;
+}
+
+.loading_wrapper.-visible .loading_container h1 img{
   opacity: 1;
   transform: translate(0, 0);
 }
 
-.loading_container h1::after{
+/* .loading_container h1::after{
+  background-image: url('../img/posseLogotouka.png');
   font-size: 15px;
   color: rgb(133, 119, 214);
   content: 'presents by POSSE';
@@ -71,7 +76,8 @@ loading
   right: 0;
   transform: translate(0, -100%);
   margin-top: 80px;
-}
+ 
+} */
 
 .loading_container #click_me{
   margin-top: 50px;
