@@ -52,6 +52,7 @@ function judgeAnswer1(){
       document.getElementById("check_correct").style.display = "block";
       document.getElementById("hint").style.display = "none";
       document.getElementById("quit").style.display = "none";
+      document.getElementById("hint_box").style.display = "none";
       button.classList.add("notClick");
   }else{
       document.getElementById("check_incorrect").style.display = "block";
@@ -71,6 +72,7 @@ function judgeAnswer2(){
       document.getElementById("check_correct2").style.display = "block";
       document.getElementById("hint2").style.display = "none";
       document.getElementById("quit2").style.display = "none";
+      document.getElementById("hint_box2").style.display = "none";
       button.classList.add("notClick");
   }else{
       document.getElementById("check_incorrect2").style.display = "block";
@@ -90,6 +92,7 @@ function judgeAnswer3(){
       document.getElementById("check_correct3").style.display = "block";
       document.getElementById("hint3").style.display = "none";
       document.getElementById("quit3").style.display = "none";
+      document.getElementById("hint_box3").style.display = "none";
       button.classList.add("notClick");
   }else{
       document.getElementById("check_incorrect3").style.display = "block";
@@ -111,7 +114,7 @@ function nextQuestion2(){
 }
 
 function nextQuestion3(){
-  $("#question4").fadeIn(3500).css("display", "flex");
+  $("#question4").fadeIn(2000).css("display", "flex");
 }
 
 
@@ -139,13 +142,13 @@ $(function(){
     }},3700);
     setTimeout(function(){
       $(".remove1").fadeOut();
-    },4700);
+    },5200);
     setTimeout(function(){
       $(".remove2").fadeOut();
-    },7250);
+    },7900);
     setTimeout(function(){
       $(".remove3").fadeOut();
-    },9800);
+    },11500);
   });
 });
 

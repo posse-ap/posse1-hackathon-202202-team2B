@@ -46,3 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+button{
+	border-color: inherit;
+	background-color: inherit;
+	padding: inherit;
+	border-width: inherit;
+	color: inherit;
+}
