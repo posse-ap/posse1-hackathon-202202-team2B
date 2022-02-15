@@ -5,6 +5,10 @@ body{
   width: 100vw;
   height: 100vh;
   background: #202020;
+  /* background-image: url('../img/questionbg1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
 }
 
 button{
@@ -52,8 +56,8 @@ main {
 
 /* 問題画面 */
 .question_base{
-  background: white;
-  width: 90%;
+  background: transparent;
+  width: 60%;
   margin: auto;
 
 }
@@ -77,6 +81,8 @@ main {
   margin: 60px auto 30px auto;
   font-size: 35px;
   line-height: 150%;
+  background: rgba(255, 255, 255, 0.788);
+  border-radius: 20px;
 }
 .questions_question_container p {
   text-align: center;
