@@ -1,30 +1,24 @@
 'use strict';
 
-let hints = document.querySelectorAll('.questions_hint');
-let quits = document.querySelectorAll('.questions_quit');
-let hint_divs = document.querySelectorAll('.hint_');
-let quit_divs = document.querySelectorAll('.quit_');
-// let try_again_buttons = document.querySelectorAll('.hint_try_again');
+const questions_main = document.getElementById('main');
+const hint = document.querySelector('.questions_hint');
+const quit = document.querySelector('.questions_quit');
+const try_again = document.querySelector('.hint_try_again');
 
 // ヒント画面の表示
-hints[0].addEventListener('click', function display_hint() {
-    hint_divs[0].style.display = 'block';
-})
-hints[1].addEventListener('click', function display_hint() {
-    hint_divs[1].style.display = 'block';
-})
-hints[2].addEventListener('click', function display_hint() {
-    hint_divs[2].style.display = 'block';
+hint.addEventListener('click', function  display_hint() {
+    questions_main.style.display = 'none';
+    document.querySelector('.hint_').style.display = 'block';
 })
 // 諦める画面の表示
-quits[0].addEventListener('click', function display_quit() {
-    quit_divs[0].style.display = 'block';
+quit.addEventListener('click', function  display_quit() {
+    questions_main.style.display = 'none';
+    document.querySelector('.quit_').style.display = 'block';
 })
-quits[1].addEventListener('click', function display_quit() {
-    quit_divs[1].style.display = 'block';
-})
-quits[2].addEventListener('click', function display_quit() {
-    quit_divs[2].style.display = 'block';
+
+try_again.addEventListener('click', function close_hint() {
+    questions_main.style.display = 'block';
+    document.querySelector('.hint_').style.display = 'none';
 })
 
 
