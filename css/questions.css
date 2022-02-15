@@ -153,8 +153,11 @@ main {
   margin-bottom: 5%;
 }
 
-
-
 .notClick{
   pointer-events: none;
+}
+/* 「問題はまだ終わってません」セクション  */
+#question4{
+  height: 30vh;
+  background-color: lightslategray;
 }

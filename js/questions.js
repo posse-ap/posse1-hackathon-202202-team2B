@@ -38,7 +38,8 @@ document.getElementById("check_correct").style.display = "none";
 document.getElementById("check_incorrect").style.display = "none";
 document.getElementById("question2").style.display = "none";
 document.getElementById("question3").style.display = "none";
-
+//「問題まだ終わってないよ」画面
+document.getElementById("question4").style.display = "none";
 
 function judgeAnswer1(){
   
@@ -110,5 +111,9 @@ function nextQuestion2(){
   document.getElementById("question3").style.display = "block";
   document.getElementById("check_correct3").style.display = "none";
   document.getElementById("check_incorrect3").style.display = "none";
+}
+
+function nextQuestion3(){
+  document.getElementById("question4").style.display = "block";
 }
 
