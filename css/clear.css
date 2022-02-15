@@ -305,10 +305,10 @@ body.appear .clear_{
 }
 
 footer{
-position: fixed;/*←絶対位置*/
+position: fixed;
 bottom: 0;
 left: 35%;
- /*下に固定*/
+
 }
 
 .posse_sns_links{
