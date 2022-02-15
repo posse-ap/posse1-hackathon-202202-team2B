@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- loading画面 -->
-  <div class="loading_wrapper" id="loading">
+  <div class="loading_wrapper notClick" id="loading">
     <div class="loading_container">
       <h1>POSSEからの挑戦状</h1>
       <p id="click_me" class="blink">- click to start -</p>
@@ -18,13 +18,12 @@
   </div>
   <!-- start画面 -->
   <div class="start_wrapper">
-    <h1>POSSEからの挑戦状</h1>
     <div class="start_explain">
       <p>ここにゲームの説明をいろいろ書いていきます</p>
       <p>制限時間とか世界観の説明とか</p>
+      <button id="game_start" onclick="location.href='questions.html'">game start</button>
     </div>
-
-    <button id="game_start" onclick="location.href='questions.html'">game start</button>
+      
 
   </div>
   <script src="../js/jquery-3.6.0.min.js"></script>
