@@ -1,4 +1,8 @@
+/* さわらび明朝 */
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+
 body{
+  font-family: 'Sawarabi Mincho', sans-serif;
   width: 100vw;
   height: 100vh;
 }
@@ -35,7 +39,7 @@ loading
   height: 100%;
   background-color: #000;
   transform: translate(0, 100%);
-  transition: transform cubic-bezier(0.65, 0, 0.35, 1) 3s;
+  transition: transform cubic-bezier(0.65, 0, 0.35, 1) 2.5s;
   content: '';
 }
 .loading_container{
@@ -51,7 +55,7 @@ loading
   display: block;
   width: auto;
   opacity: 0;
-  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s, opacity linear 1.7s;
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s, opacity linear 3s;
 }
 
 .loading_wrapper.-visible .loading_container h1 {
@@ -93,6 +97,21 @@ loading
 start
 ---------- */
 .start_wrapper{
-  background-color: lightgoldenrodyellow;
+  background-color: #fafad2;
   text-align: center;
+  height: 100%;
+  background: linear-gradient( #2b2b33 0%, #000000 16%, #2d313b 50%, #000000 87%, #000 100%);
+  color: #fff;
+  position: relative;
+}
+.start_explain{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  line-height: 4;
+  font-size: 20px;
+}
+.notClick{
+  pointer-events: none;
 }

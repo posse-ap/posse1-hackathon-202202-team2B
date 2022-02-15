@@ -1,56 +1,42 @@
 'use strict';
 
-let sections = document.querySelectorAll('section');
-console.log(sections[1]);
+//カウントダウン画面
+$(window).on('load',function(){ //ロードされた時
+  $('#main').hide();
+  $('.questions_countdown_container').delay(3000).fadeOut(3000);
+  $('#main').delay(3000).fadeIn();
+});
+
 let hints = document.querySelectorAll('.questions_hint');
-console.log(hints[0]);
-let quits = document.querySelectorAll('.questions_quit');
-console.log(quits[2]);
-let hint_pages = document.querySelectorAll('.hint_');
-console.log(hint_pages[1]);
-const try_again = document.querySelector('.hint_try_again');
-
-
+let hint_divs = document.querySelectorAll('.hint_');
+// let quits = document.querySelectorAll('.questions_quit');
+// let quit_divs = document.querySelectorAll('.quit_');
+// let try_again_buttons = document.querySelectorAll('.hint_try_again');
 // ヒント画面の表示
-function display_hint(i) {
-  sections[i].style.display = 'none';
-  hint_pages[i].style.display = 'block';
-}
-
-hints[0].addEventListener('click', display_hint(0));
-hints[1].addEventListener('click', display_hint(1));
-hints[2].addEventListener('click', display_hint(2));
-
-
-// hint.addEventListener('click', function display_hint() {
-//   sections.forEach(section => {
-//     section.style.display = 'none'
-//   });
-//   document.querySelector('.hint_').style.display = 'block';
-// })
-// 諦める画面の表示
-// quit.addEventListener('click', function display_quit() {
-//   questions_main.style.display = 'none';
-//   document.querySelector('.quit_').style.display = 'block';
-// })
-
-// try_again.addEventListener('click', function close_hint() {
-//   questions_main.style.display = 'block';
-//   document.querySelector('.hint_').style.display = 'none';
-// })
+hints[0].addEventListener('click', function display_hint() {
+    hint_divs[0].style.display = 'block';
+})
+hints[1].addEventListener('click', function display_hint() {
+    hint_divs[1].style.display = 'block';
+})
+hints[2].addEventListener('click', function display_hint() {
+    hint_divs[2].style.display = 'block';
+})
 
 
 
-const answer1 = "sample1";
-const answer2 = "sample2";
-const answer3 = "sample3";
+
+const answer1 = "む";
+const answer2 = "4";
+const answer3 = "おおいた";
 
 
 document.getElementById("check_correct").style.display = "none";
 document.getElementById("check_incorrect").style.display = "none";
 document.getElementById("question2").style.display = "none";
 document.getElementById("question3").style.display = "none";
-
+//「問題まだ終わってないよ」画面
+document.getElementById("question4").style.display = "none";
 
 function judgeAnswer1() {
 
@@ -109,18 +95,29 @@ function judgeAnswer3() {
   }
 }
 
-function nextQuestion1() {
-  document.getElementById("question1").style.display = "none";
+function nextQuestion1(){
   document.getElementById("question2").style.display = "block";
   document.getElementById("check_correct2").style.display = "none";
   document.getElementById("check_incorrect2").style.display = "none";
 }
 
-function nextQuestion2() {
-  document.getElementById("question1").style.display = "none";
-  document.getElementById("question2").style.display = "none";
+function nextQuestion2(){
   document.getElementById("question3").style.display = "block";
   document.getElementById("check_correct3").style.display = "none";
   document.getElementById("check_incorrect3").style.display = "none";
 }
 
+function nextQuestion3(){
+  document.getElementById("question4").style.display = "block";
+}
+
+
+
+// ボーナスステージ3回クリックで画面遷移
+let notr = 0;
+function finalStage() {
+  notr++;
+  if(notr == 3) {
+    window.location.href = '../html/clear.html';
+  }
+}
