@@ -29,7 +29,7 @@ button{
 }
 
 .questions_incorrect span{
-  color: blue;
+  color: red;
   font-weight: bold;
 }
 
@@ -234,7 +234,7 @@ main {
 /* 「問題はまだ終わってません」セクション  */
 #question4{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   padding: 1rem 2rem;
   border-top: 4px solid #d8dcdc;
@@ -264,4 +264,71 @@ main {
   text-align: center;
   margin: 40px 0;
   font-size: 30px;
+}
+
+/* ⬇︎----------------------------------------------スマホ画面用---------------------------------------------------------⬇︎*/
+@media screen and (max-width:480px){
+
+  .questions_question_container {
+    margin: 60px auto 5px auto;
+  }
+
+  .questions_question_container p {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .questions_content {
+    margin-top: 0;
+  }
+
+  .under_line:after {
+    bottom: -5px;
+  }
+
+  .questions_submit_container input {
+    width: 70%;
+    padding: 8px 16px;
+    margin-bottom: 3%;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.questions_submit_container button {
+  width: 70%;
+  padding: 0.5em;
+}
+
+.questions_hint {
+  width: 70%;
+}
+
+.questions_quit {
+  width: 70%;
+}
+.next_question {
+  width: 70%;
+}
+.questions_hint a, .questions_quit a, .next_question a {
+  padding: 0.5em;
+  margin-top: 5px;
+}
+
+.hint_ p {
+  font-size: 12px;
+}
+
+.questions_question_container_plus {
+  margin: 10px auto 30px auto;
+  font-size: 1rem;
+  line-height: 170%;
+  text-align: center;
+}
+
+#question4 {
+  padding: 0;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+
+}
 }

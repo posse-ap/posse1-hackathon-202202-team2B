@@ -291,6 +291,11 @@ body.appear .clear_{
   gap: 30px;
 }
 
+.posse_sns_links {
+  display: flex;
+  gap: 30px;
+}
+
 footer{
 position: fixed;
 bottom: 0;
@@ -298,10 +303,6 @@ left: 35%;
 
 }
 
-.posse_sns_links{
-  display: flex;
-  gap: 30px;
-}
 .posse_sns_links img{
   width: 40px;
 }
