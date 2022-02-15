@@ -29,9 +29,9 @@ quits[2].addEventListener('click', function display_quit() {
 
 
 
-const answer1 = "sample1";
-const answer2 = "sample2";
-const answer3 = "sample3";
+const answer1 = "む";
+const answer2 = "4";
+const answer3 = "おおいた";
 
 
 document.getElementById("check_correct").style.display = "none";
@@ -99,15 +99,12 @@ function judgeAnswer3(){
 }
 
 function nextQuestion1(){
-  document.getElementById("question1").style.display = "none";
   document.getElementById("question2").style.display = "block";
   document.getElementById("check_correct2").style.display = "none";
   document.getElementById("check_incorrect2").style.display = "none";
 }
 
 function nextQuestion2(){
-  document.getElementById("question1").style.display = "none";
-  document.getElementById("question2").style.display = "none";
   document.getElementById("question3").style.display = "block";
   document.getElementById("check_correct3").style.display = "none";
   document.getElementById("check_incorrect3").style.display = "none";

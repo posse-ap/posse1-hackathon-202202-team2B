@@ -1,18 +1,16 @@
 
-span{
-  font-weight: bold;
-}
-
 .questions_correct, .questions_incorrect{
   text-align: center;
 }
 
 .questions_correct span{
   color: red;
+  font-weight: bold;
 }
 
 .questions_incorrect span{
   color: blue;
+  font-weight: bold;
 }
 
 
