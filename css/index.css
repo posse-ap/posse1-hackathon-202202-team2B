@@ -103,7 +103,7 @@ loading
 start
 ---------- */
 .start_wrapper{
-  background-color: #fafad2;
+  background-color: rgb(173, 173, 173);
   text-align: center;
   height: 100%;
   background: linear-gradient( #2b2b33 0%, #000000 16%, #2d313b 50%, #000000 87%, #000 100%);
@@ -130,8 +130,26 @@ start
   pointer-events: none;
 }
 
-
-
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#000;  /* 背景カラー */
+  z-index: 9999;  /* 一番手前に */
+  pointer-events: none;  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;  /* 初期値 : 透過状態 */
+  -webkit-transition: opacity .8s ease;  /* アニメーション時間は 0.8秒 */
+  transition: opacity .8s ease;
+  background-image: url('../img/universe.jpeg');
+  background-size: cover;
+  
+}
+body.fadeout::after {
+  opacity: 1;
+}
 
 
 
