@@ -32,7 +32,7 @@ function TextTypingAnime() {
 
 //loadingの表示
 $(window).on('load',function(){ //ロードされた時
-  //spanタグを追加する
+  //spanタグを追加する(タイピング風アニメーションの分)
 	var element = $(".text_typing");
 	element.each(function () {
 		var text = $(this).html();
