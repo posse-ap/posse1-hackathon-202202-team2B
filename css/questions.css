@@ -5,10 +5,10 @@ body{
   width: 100vw;
   height: 100vh;
   background: #202020;
-  /* background-image: url('../img/questionbg1.jpeg');
+  background-image: url('../img/milkyway.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: repeat repeat; 
 }
 
 button{
@@ -18,6 +18,10 @@ button{
 .questions_correct, .questions_incorrect{
   text-align: center;
 }
+.questions_correct p, .questions_incorrect p{
+  color: #fff;
+}
+
 
 .questions_correct span{
   color: red;
@@ -116,12 +120,12 @@ main {
 	padding: 0.8em;
 	text-align: center;
 	text-decoration: none;
-	color: #1B1B1B;
+	color: black;
 	background: #fff;
-	border:1px solid #1B1B1B;
+	border:1px solid black;
 }
 .questions_submit_container button:hover {
-  background: #1B1B1B;
+  background: rgba(105, 105, 105, 0.8);
   color: #fff;
   cursor: pointer;
   text-decoration: none;
@@ -145,9 +149,9 @@ main {
 	padding: 0.8em;
 	text-align: center;
 	text-decoration: none;
-	color: #1B1B1B;
+	color: black;
 	background: #fff;
-	border:1px solid #1B1B1B;
+	border:1px solid black;
   margin-top: 10px;
 }
 .questions_hint, .questions_quit, .next_question {
@@ -160,7 +164,7 @@ main {
   margin-bottom: 30px;
 }
 .questions_hint a:hover, .questions_quit a:hover, .next_question a:hover {
-  background: #1B1B1B;
+  background: rgba(105, 105, 105, 0.8);
   color: #fff;
   cursor: pointer;
   text-decoration: none;
@@ -181,6 +185,7 @@ main {
   margin-bottom: 5%;
   margin-top: 15px;
   line-height: 150%;
+  color: #fff;
 }
 .hint_buttons{
   display: flex;
@@ -193,13 +198,13 @@ main {
 	padding: 0.8em;
 	text-align: center;
 	text-decoration: none;
-	background: #1B1B1B;
+	background: rgba(105, 105, 105, 0.8);;
 	color: #fff;
-	border:1px solid #1B1B1B;
+	border:1px solid black;
   margin-top: 10px;
 }
 .hint_try_again a:hover{
-  color: #1B1B1B;
+  color: rgba(105, 105, 105, 0.8);;
   background: #fff;
   cursor: pointer;
   text-decoration: none;
