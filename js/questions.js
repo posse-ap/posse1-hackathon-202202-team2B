@@ -6,6 +6,14 @@ let hint_divs = document.querySelectorAll('.hint_');
 let quit_divs = document.querySelectorAll('.quit_');
 // let try_again_buttons = document.querySelectorAll('.hint_try_again');
 
+//カウントダウン画面
+$(window).on('load',function(){ //ロードされた時
+  $('#main').hide();
+  $('.questions_countdown_container').delay(3000).fadeOut(3000);
+  $('#main').delay(3000).fadeIn();
+});
+
+
 // ヒント画面の表示
 
 hints[0].addEventListener('click', function display_hint() {
