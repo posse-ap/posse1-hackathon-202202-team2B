@@ -9,7 +9,7 @@ let quit_divs = document.querySelectorAll('.quit_');
 //カウントダウン画面
 $(window).on('load',function(){ //ロードされた時
   $('#main').hide();
-  $('.questions_countdown_container').delay(3000).fadeOut(3000);
+  $('.questions_countdown_container').delay(2000).fadeOut(3000);
   $('#main').delay(3000).fadeIn();
 });
 
