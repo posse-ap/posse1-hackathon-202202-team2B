@@ -287,20 +287,12 @@ body.appear .clear_{
 
 .clear_share_link{
   display: flex;
-  justify-content: space-evenly;
-  bottom: 23%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  flex-direction: column;
+  gap: 30px;
 }
 
 .posse_sns_links {
-  width: 30%;
   display: flex;
-  justify-content: space-evenly;
-  bottom: 14%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  flex-direction: column;
   gap: 30px;
 }
 
@@ -311,10 +303,6 @@ left: 35%;
 
 }
 
-.posse_sns_links{
-  display: flex;
-  gap: 30px;
-}
 .posse_sns_links img{
   width: 40px;
 }

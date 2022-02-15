@@ -29,7 +29,7 @@ button{
 }
 
 .questions_incorrect span{
-  color: blue;
+  color: red;
   font-weight: bold;
 }
 
@@ -234,7 +234,7 @@ main {
 /* 「問題はまだ終わってません」セクション  */
 #question4{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   padding: 1rem 2rem;
   border-top: 4px solid #d8dcdc;
@@ -313,7 +313,22 @@ main {
   margin-top: 5px;
 }
 
+.hint_ p {
+  font-size: 12px;
+}
+
+.questions_question_container_plus {
+  margin: 10px auto 30px auto;
+  font-size: 1rem;
+  line-height: 170%;
+  text-align: center;
+}
+
 #question4 {
+  padding: 0;
+  height: auto;
   width: 80%;
+  margin: 0 auto;
+
 }
 }
