@@ -21,8 +21,9 @@
 
   <main id="main">
     <section id="question1">
-      <div class="questions_question_container">
-        <p>Q1. ?に入る文字を答えよ</p>
+      <div class="question_base">
+      <div class="questions_question_container page">
+        <p class="under_line">Q1. ?に入る文字を答えよ</p>
         <div class="questions_content">
           <p><span class="remove3">じん　ー　い　＝　に<br></span>か<span class="remove3">　ー　</span>い<span class="remove3">　＝　ひ<br>ほとけ　ー　い　＝　?</span></p>
         </div>
@@ -35,7 +36,7 @@
   
       <div class="questions_correct" id="check_correct">
         <p id="correct"><span>正解</span>です！！</p>
-        <button onclick="nextQuestion1()"><a href="#questions_question2">次へ</a></button>
+        <button onclick="nextQuestion1()" class="next_question"><a href="#question2">次へ</a></button>
       </div>
       
       <div class="questions_incorrect" id="check_incorrect">
@@ -45,23 +46,23 @@
   
       <div class="questions_hint_quit_container">
         <button class="questions_hint" id="hint"><a href="#hint_message">ヒント</a></button>
-        <button class="questions_quit" id="quit"><a href="./quit.html">諦める</a></button>
-      </div>
-  
-      <!-- こっから下がヒントと諦める押した時に表示される画面 -->
-      <div class="hint_">
-        <h3>ヒント</h3>
+        <!-- こっから下がヒントと諦める押した時に表示される画面 -->
+      <div class="hint_" id="hint_box">
         <p id="hint_messsage">引き算が全て「ーい」になっています。<br>つまり、左側には全て「い」が存在します。
         </p>
         <div class="hint_buttons">
-          <button class="hint_go_profile"><a href="https://twitter.com/posse_program">さらにヒントが欲しい方はPOSSEプロフィールへGO!</a></button>
+          <button class="hint_go_profile"><a href="https://twitter.com/posse_program">さらにヒントが欲しい方はPOSSETwitterプロフィールへGO!</a></button>
         </div>
+      </div>
+        <button class="questions_quit" id="quit"><a href="./quit.html">諦める</a></button>
+      </div>
       </div>
     </section>  
 
     <section id="question2">
+      <div class="question_base">
       <div class="questions_question_container">
-        <p id="questions_question2">Q2. ?に入る数字を答えよ(半角)</p>
+        <p id="questions_question2 page" class="under_line">Q2. ?に入る数字を答えよ(半角)</p>
         <div class="questions_content">
           <p><span class="remove2">1 = 1 , 2 = 2 , </span>3<span class="remove2"> = 3 <br>4 = 5 , 5 = ?</span></p>
         </div>
@@ -74,34 +75,35 @@
   
       <div class="questions_correct" id="check_correct2">
         <p id="correct"><span>正解</span>です！！</p>
-        <button onclick="nextQuestion2()"><a href="#questions_question3">次へ</a></button>
+        <button onclick="nextQuestion2()" class="next_question"><a href="#questions_question3">次へ</a></button>
       </div>
       
       <div class="questions_incorrect" id="check_incorrect2">
         <p id="incorrect"><span>不正解</span>です</p>
-        <button class="hint_try_again"><a href="#input_answer">TRY AGAIN</a></button>
+        <button class="hint_try_again"><a href="#input_answer2">TRY AGAIN</a></button>
       </div>
   
       <div class="questions_hint_quit_container">
         <button class="questions_hint" id="hint2"><a href="#hint_message2">ヒント</a></button>
+        <!-- こっから下がヒントと諦める押した時に表示される画面 -->
+       <div class="hint_" id="hint_box2">
+        <p id="hint_messsage3">まずは不明な部分をA,Bと置いてみよう。
+        </p>
+        <div class="hint_buttons">
+          <button class="hint_go_profile"><a href="https://twitter.com/posse_program">さらにヒントが欲しい方はPOSSETwitterプロフィールへGO!</a></button>
+        </div>
+      </div>
         <button class="questions_quit" id="quit2"><a href="./quit.html">諦める</a></button>
       </div>
-  
-        <!-- こっから下がヒントと諦める押した時に表示される画面 -->
-      <div class="hint_">
-        <h3>ヒント</h3>
-        <p id="hint_messsage2">縦の並びに意味はありません。</p>
-        <div class="hint_buttons">
-          <button class="hint_go_profile"><a href="https://twitter.com/posse_program">さらにヒントが欲しい方はPOSSEプロフィールへGO!</a></button>
-        </div>
       </div>
     </section>
 
     <section id="question3">
-      <div class="questions_question_container">
-        <p id="questions_question3">Q3. ひらがな四文字で答えよ</p>
+      <div class="question_base">
+      <div class="questions_question_container page">
+        <p id="questions_question3" class="under_line">Q3. ひらがな四文字で答えよ</p>
         <div class="questions_content">
-          <p><span class="remove1">,2文字目を「はご」に変えるとお正</span>月<span class="remove1">飾りに、<br>3文字目を「が」に変えると血液型に、<br>3,4文字目を「かみ」に変えると動物になる</span></p>
+          <p><span class="remove1">1,2文字目を「はご」に変えるとお正</span>月<span class="remove1">飾りに、<br>3文字目を「が」に変えると血液型に、<br>3,4文字目を「かみ」に変えると動物になる</span></p>
         </div>
       </div>
   
@@ -112,40 +114,39 @@
   
       <div class="questions_correct" id="check_correct3">
         <p id="correct"><span>正解</span>です！！</p>
-        <button onclick="nextQuestion3()" id="last_button"><a href="#question4">最後に</a></button>
+        <button onclick="nextQuestion3()" class="next_question" id="last_button"><a href="#question4">最後に</a></button>
       </div>
       
       <div class="questions_incorrect" id="check_incorrect3">
         <p id="incorrect"><span>不正解</span>です</p>
-        <button class="hint_try_again"><a href="#input_answer">TRY AGAIN</a></button>
+        <button class="hint_try_again"><a href="#input_answer3">TRY AGAIN</a></button>
       </div>
   
       <div class="questions_hint_quit_container">
         <button class="questions_hint" id="hint3"><a href="#hint_message3">ヒント</a></button>
-        <button class="questions_quit" id="quit3"><a href="./quit.html">諦める</a></button>
-      </div>
-  
-        <!-- こっから下がヒントと諦める押した時に表示される画面 -->
-      <div class="hint_">
-        <h3>ヒント</h3>
+       <!-- こっから下がヒントと諦める押した時に表示される画面 -->
+       <div class="hint_" id="hint_box3">
         <p id="hint_messsage3">まずは不明な部分をA,Bと置いてみよう。
         </p>
         <div class="hint_buttons">
-          <button class="hint_go_profile"><a href="https://twitter.com/posse_program">さらにヒントが欲しい方はPOSSEプロフィールへGO!</a></button>
+          <button class="hint_go_profile"><a href="https://twitter.com/posse_program">さらにヒントが欲しい方はPOSSETwitterプロフィールへGO!</a></button>
         </div>
+      </div>
+        <button class="questions_quit" id="quit3"><a href="./quit.html">諦める</a></button>
+      </div>
       </div>
     </section>    
     <!-- 「問題はまだ終わってません」セクション -->
     <section id="question4">
-      <div class="questions_question_container">
-        <p>---全問クリア---</p>
-        <p>「問題はまだ終わってません」って言うメッセージ</p>
+      <div class="questions_question_container_plus">
+        <p>---- 全問クリア ----<br>地球にはまだ到達していない<br>初めの目的を思い出せ<br>君は何を…何を見にここへきた？<br>POSAとの再接続を試みよ</p>
       </div>
     </section>
 
   </main>
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/questions.js"></script>
+  <script src="../js/time.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,11 @@ body{
   font-family: 'Sawarabi Mincho', sans-serif;
   width: 100vw;
   height: 100vh;
+  background: #202020;
+  /* background-image: url('../img/questionbg1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
 }
 
 button{
@@ -50,30 +55,38 @@ main {
 
 
 /* 問題画面 */
+.question_base{
+  background: transparent;
+  width: 60%;
+  margin: auto;
+
+}
+.under_line{
+  position: relative;
+  font-size: 40px;
+}
+.under_line:after{
+  position: absolute;
+  content: '';
+  width: 110px;
+  display: inline-block;
+  border-bottom: solid 2px black;
+  bottom: -20px;
+  left: calc(50% - 55px);
+}
 .questions_question_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 2rem;
-  border-top: 4px solid #d8dcdc;
-  border-right: 4px solid #666;
-  border-bottom: 4px solid #333;
-  border-left: 4px solid #868888;
-  border-radius: 0;
-  background-image: -webkit-linear-gradient(135deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%);
-  background-image: linear-gradient(-45deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%);
-  width: 650px;
-  height: 250px;
-  margin: 40px auto;
-  font-size: 30px;
+  margin: 60px auto 30px auto;
+  font-size: 35px;
   line-height: 150%;
+  background: rgba(255, 255, 255, 0.788);
+  border-radius: 20px;
 }
 .questions_question_container p {
   text-align: center;
-  margin:10px 0 20px 0;
-}
-.questions_question_container img {
-  width: 30%;
+  margin: 40px 0;
 }
 
 /* 提出画面 */
@@ -97,15 +110,26 @@ main {
   text-align: center;
 }
 .questions_submit_container button {
-  border: 5px;
-  border-radius: 30px;
-  background: #4676D7;
+  display: block;
+	position: relative;
+	width: 20%;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #1B1B1B;
+	background: #fff;
+	border:1px solid #1B1B1B;
+}
+.questions_submit_container button:hover {
+  background: #1B1B1B;
   color: #fff;
-  padding: 16px 32px;
-  font-size: x-large;
-  font-weight: bold;
   cursor: pointer;
-  margin-bottom: 3%;
+  text-decoration: none;
+}
+
+#correct, #incorrect{
+  font-size: 20px;
+  margin: 20px auto 10px auto;
 }
 
 /* ヒント・諦めるボタン画面 */
@@ -113,21 +137,33 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
-.questions_hint_quit_container button {
-  width: 20%;
-  border: 5px;
-  border-radius: 10px;
-  background: #4676D7;
+.questions_hint a, .questions_quit a, .next_question a{
+  display: block;
+	position: relative;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #1B1B1B;
+	background: #fff;
+	border:1px solid #1B1B1B;
+  margin-top: 10px;
+}
+.questions_hint, .questions_quit, .next_question {
+  width:20%
+}
+.questions_hint{
+  margin-top: 20px;
+}
+.questions_quit, .next_question{
+  margin-bottom: 30px;
+}
+.questions_hint a:hover, .questions_quit a:hover, .next_question a:hover {
+  background: #1B1B1B;
   color: #fff;
-  padding: 16px 32px;
-  font-size: x-large;
-  font-weight: bold;
   cursor: pointer;
-  margin-bottom: 3%;
-}
-.questions_hint_quit_container button a{
-  color: red;
+  text-decoration: none;
 }
 
 /* ヒント画面 */
@@ -138,39 +174,41 @@ main {
 .hint_ h3{
   font-size: x-large;
   font-weight: bold;
-  color: red;
   margin: 5%;
 }
 .hint_ p{
   font-size: large;
   margin-bottom: 5%;
+  margin-top: 15px;
+  line-height: 150%;
 }
 .hint_buttons{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.hint_try_again{
-  border: none;
-  border-radius: 10px;
-  background: #e60b0b;
-  color: #fff;
-  padding: 8px 16px;
-  font-size: large;
-  font-weight: bold;
-  cursor: pointer;
-  margin-bottom: 5%;
-}
 .hint_try_again a{
+  display: block;
+	position: relative;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	background: #1B1B1B;
+	color: #fff;
+	border:1px solid #1B1B1B;
+  margin-top: 10px;
+}
+.hint_try_again a:hover{
+  color: #1B1B1B;
+  background: #fff;
+  cursor: pointer;
   text-decoration: none;
-  color: #fff;
 }
 .hint_go_profile{
   border: none;
   border-radius: 40px;
   background: #1da1f2;
-  padding: 16px 32px;
-  font-size: x-large;
+  padding: 12px 20px;
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 5%;
@@ -190,7 +228,87 @@ main {
 
 /* 「問題はまだ終わってません」セクション  */
 #question4{
-  height: 30vh;
-  background-color: lightslategray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-top: 4px solid #d8dcdc;
+  border-right: 4px solid #666;
+  border-bottom: 4px solid #333;
+  border-left: 4px solid #868888;
+  border-radius: 0;
+  background-image: -webkit-linear-gradient(135deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%);
+  background-image: linear-gradient(-45deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%);
+  width: 650px;
+  height: 300px;
+  margin: 40px auto;
+  font-size: 30px;
+  line-height: 150%;
 }
 
+.questions_question_container_plus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto 30px auto;
+  font-size: 35px;
+  line-height: 150%;
+  text-align: center;
+}
+.questions_question_container p {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 30px;
+}
+
+/* ⬇︎----------------------------------------------スマホ画面用---------------------------------------------------------⬇︎*/
+@media screen and (max-width:480px){
+
+  .questions_question_container {
+    margin: 60px auto 5px auto;
+  }
+
+  .questions_question_container p {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .questions_content {
+    margin-top: 0;
+  }
+
+  .under_line:after {
+    bottom: -5px;
+  }
+
+  .questions_submit_container input {
+    width: 70%;
+    padding: 8px 16px;
+    margin-bottom: 3%;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.questions_submit_container button {
+  width: 70%;
+  padding: 0.5em;
+}
+
+.questions_hint {
+  width: 70%;
+}
+
+.questions_quit {
+  width: 70%;
+}
+.next_question {
+  width: 70%;
+}
+.questions_hint a, .questions_quit a, .next_question a {
+  padding: 0.5em;
+  margin-top: 5px;
+}
+
+#question4 {
+  width: 80%;
+}
+}
