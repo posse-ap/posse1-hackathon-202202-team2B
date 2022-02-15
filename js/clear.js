@@ -36,28 +36,34 @@ $(function() {
   const cmt2 = $('#cmt2');
   const cmt3 = $('#cmt3');
   const cmt4 = $('#cmt4');
+  const cmt5 = $('#cmt5');
   cmt.hide();
   //スクロールが100に達したらボタン表示
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 70) {
+      if ($(this).scrollTop() > 30) {
           cmt1.fadeIn();
       } else {
           cmt1.fadeOut();
       }
-      if ($(this).scrollTop() > 180) {
+      if ($(this).scrollTop() > 40) {
         cmt2.fadeIn();
       } else {
           cmt2.fadeOut();
       }
-      if ($(this).scrollTop() > 300) {
+      if ($(this).scrollTop() > 50) {
         cmt3.fadeIn();
       } else {
         cmt3.fadeOut();
       }
-      if ($(this).scrollTop() > 400) {
+      if ($(this).scrollTop() > 60) {
         cmt4.fadeIn();
       } else {
         cmt4.fadeOut();
+      }
+      if ($(this).scrollTop() > 70) {
+        cmt5.fadeIn();
+      } else {
+        cmt5.fadeOut();
       }
   });
 });
