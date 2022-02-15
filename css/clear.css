@@ -262,7 +262,6 @@ body.appear .clear_{
   width: 50%;
   display: flex;
   justify-content: space-evenly;
-  position: absolute;
   bottom: 23%;
   left: 50%;
   transform: translate(-50%, 0);
@@ -272,7 +271,6 @@ body.appear .clear_{
   width: 30%;
   display: flex;
   justify-content: space-evenly;
-  position: absolute;
   bottom: 14%;
   left: 50%;
   transform: translate(-50%, 0);
