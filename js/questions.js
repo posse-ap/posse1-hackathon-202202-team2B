@@ -7,6 +7,7 @@ let quit_divs = document.querySelectorAll('.quit_');
 // let try_again_buttons = document.querySelectorAll('.hint_try_again');
 
 // ヒント画面の表示
+
 hints[0].addEventListener('click', function display_hint() {
     hint_divs[0].style.display = 'block';
 })
@@ -16,16 +17,7 @@ hints[1].addEventListener('click', function display_hint() {
 hints[2].addEventListener('click', function display_hint() {
     hint_divs[2].style.display = 'block';
 })
-// 諦める画面の表示
-quits[0].addEventListener('click', function display_quit() {
-    quit_divs[0].style.display = 'block';
-})
-quits[1].addEventListener('click', function display_quit() {
-    quit_divs[1].style.display = 'block';
-})
-quits[2].addEventListener('click', function display_quit() {
-    quit_divs[2].style.display = 'block';
-})
+
 
 
 
