@@ -269,9 +269,11 @@ body.appear .clear_{
     background-position: center;
     background-size: cover;
   }
+  .title span {
+    font-size: 2.3rem;
+  }
 
   .clear_message{
-    
     margin-bottom: 100px;
     padding-top: 20vh;
 }
