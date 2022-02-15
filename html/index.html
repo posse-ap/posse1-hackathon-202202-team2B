@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="../css/index.css">
   <title>POSSEからの挑戦状</title>
 </head>
-<body>
+<body class="fade_out">
   <!-- loading画面 -->
   <div class="loading_wrapper notClick" id="loading">
     <div class="loading_container">
@@ -38,10 +38,9 @@
       <br>「月は赤かった」という
       <br>言葉を歴史に残そう
       </p>
-      <button id="game_start" onclick="location.href='questions.html'">game start</button>
-    </div>
+      <button id="game_start"><a href="questions.html" class="navigate-anchor">game start</a></button>
       
-
+    </div>
   </div>
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/index.js"></script>
