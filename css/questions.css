@@ -21,57 +21,21 @@ main {
 }
 
 /* カウントダウン */
-/* .questions_countdown_container {
-  background-image: url("../img/universe.jpeg");
+.questions_countdown_container{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/universe.jpeg');
   background-size: cover;
 }
 
-.questions_countdown_moon {
-  top: 0;
-}
 
+/* テキストのスタイル  */
 .questions_countdown_text {
-  color: white;
-  text-align: center;
-} */
-
-
-/* テキストのスタイル */
-/* .questions_countdown_text {
   display: block;
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
 }
-
-.questions_countdown_text span {
-  display: block;
-  opacity: 0;
-  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1s, opacity linear 0.7s;
-}
-
-.questions_countdown_text span:first-child {
-  transform: translate(0, 40px);
-  font-size: 20px;
-  transition-delay: 0.25s;
-}
-
-.questions_countdown_text span:last-child {
-  margin-top: 18px;
-  transform: translate(0, 30px);
-  font-size: 48px;
-  transition-delay: 0.45s;
-}
-
-.questions_countdown_container.-visible .questions_countdown_text span {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-/****** Base style. ******/
-/* body {
-  margin: 0;
-} */
  
 
 
