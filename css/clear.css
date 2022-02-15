@@ -14,7 +14,9 @@ body{
     height: 1400px;
     position: relative;
     background-image: url('../img/earth.png');
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .clear_message{
@@ -159,8 +161,9 @@ body{
 
 body.appear{
     background:#fff;/*画面を開いた後の背景色を指定*/
-    background-image: url('../img/clear.jpg');
-    background-size: cover;
+    /* background-image: url('../img/clear.jpg'); */
+    /* background-size: cover; */
+    background-color: black;
 }
 
 .splashbg{
@@ -240,9 +243,11 @@ body.appear .clear_{
 
 @media screen and (max-width:480px) {
   .clear_ {
-    background-image: url('../img/longearth.jpg');
+    background-image: url('../img/earth.png');
     height: 118%;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .clear_comment{
