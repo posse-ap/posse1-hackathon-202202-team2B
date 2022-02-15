@@ -117,3 +117,13 @@ function nextQuestion3(){
   document.getElementById("question4").style.display = "block";
 }
 
+
+
+// ボーナスステージ3回クリックで画面遷移
+let notr = 0;
+function finalStage() {
+  notr++;
+  if(notr == 3) {
+    window.location.href = '../html/clear.html';
+  }
+}
