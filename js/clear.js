@@ -16,6 +16,7 @@ $(function() {
   const cmt1 = $('#cmt1');
   const cmt2 = $('#cmt2');
   const cmt3 = $('#cmt3');
+  const cmt4 = $('#cmt4');
   cmt.hide();
   //スクロールが100に達したらボタン表示
   $(window).scroll(function () {
@@ -29,10 +30,15 @@ $(function() {
       } else {
           cmt2.fadeOut();
       }
-      if ($(this).scrollTop() > 250) {
+      if ($(this).scrollTop() > 400) {
         cmt3.fadeIn();
       } else {
         cmt3.fadeOut();
+      }
+      if ($(this).scrollTop() > 560) {
+        cmt4.fadeIn();
+      } else {
+        cmt4.fadeOut();
       }
   });
 });
