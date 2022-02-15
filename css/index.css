@@ -120,6 +120,19 @@ start
   font-size: 1rem;
 }
 
+/* タイプライティングアニメーション */
+.text_typing span{
+  display: none;
+}
+.text_typing::after {
+  content: "|";
+ animation: typinganime 1s ease infinite;
+}
+@keyframes typinganime{
+ from{opacity:0}
+ to{opacity:1}
+}
+/* アニメーションここまで */
 .start_explain button{
   padding: 10px;
   font-size: large;
