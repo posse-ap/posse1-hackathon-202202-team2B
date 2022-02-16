@@ -61,3 +61,22 @@ $(function() {
       }
   });
 });
+
+// 効果音
+const music = new Audio('../music/clear.mp3');
+
+window.addEventListener('load', function(){
+  window.setTimeout(function(){
+    music.play();
+  }, 3000);
+});
+// window.addEventListener('load', function clear_bgm() {
+//   music.play();
+// });
+// document.getElementById('game_start').addEventListener('click', function() {
+//   music.pause();
+// });
+// function clear_bgm() {
+//   music.play();
+// };
+
