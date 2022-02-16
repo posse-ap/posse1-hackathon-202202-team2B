@@ -150,6 +150,7 @@ footer{
   position: fixed;/*←絶対位置*/
   bottom: 0;
   left: 45%;
+  width: 100%;
    /*下に固定*/
 }
 footer p{
@@ -161,6 +162,7 @@ footer p{
 .posse_sns_links{
   display: flex;
   gap: 50px;
+  margin-left: 25%;
 }
 .posse_sns_links img{
   width: 60px;
@@ -294,15 +296,14 @@ body.appear .clear_{
 }
 
 .posse_sns_links {
-  display: flex;
   gap: 30px;
+  margin-left: 70%;
 }
 
 footer{
 position: fixed;
 bottom: 0;
-left: 35%;
-
+width: auto;
 }
 
 .posse_sns_links img{
