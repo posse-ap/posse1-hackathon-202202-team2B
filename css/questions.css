@@ -45,6 +45,12 @@ main {
   height: 100vh;
   background-image: url('../img/universe.jpeg');
   background-size: cover;
+/* ローディング中のスクロールを防ぐ */
+  position: fixed;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom:0px;
 }
 
 
