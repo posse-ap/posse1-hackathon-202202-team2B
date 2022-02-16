@@ -234,21 +234,18 @@ main {
 /* 「問題はまだ終わってません」セクション  */
 #question4{
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
-  border-top: 4px solid #d8dcdc;
-  border-right: 4px solid #666;
-  border-bottom: 4px solid #333;
-  border-left: 4px solid #868888;
   border-radius: 0;
-  background-image: -webkit-linear-gradient(135deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%);
-  background-image: linear-gradient(-45deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%);
   width: 650px;
   height: 300px;
   margin: 40px auto;
+  padding-bottom: 5%;
   font-size: 30px;
   line-height: 150%;
+  color: #fff;
 }
 
 .questions_question_container_plus {
@@ -259,11 +256,34 @@ main {
   font-size: 35px;
   line-height: 150%;
   text-align: center;
+  padding: 15px;
 }
 .questions_question_container p {
   text-align: center;
   margin: 40px 0;
   font-size: 30px;
+}
+.border_cross{
+  margin:2em 0;
+  position: relative;
+  padding: 0.5em 1.5em;
+  border-top: solid 0.5px #fff;
+  border-bottom: solid 0.5px #fff;
+}
+.border_cross:before, .border_cross:after{
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 0.5px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: #fff;
+}
+.border_cross:before {left: 10px;}
+.border_cross:after {right: 10px;}
+.border_cross p {
+  margin: 0; 
+  padding: 0;
 }
 
 /* ⬇︎----------------------------------------------スマホ画面用---------------------------------------------------------⬇︎*/
@@ -320,8 +340,9 @@ main {
 .questions_question_container_plus {
   margin: 10px auto 30px auto;
   font-size: 1rem;
-  line-height: 170%;
+  line-height: 2.5;
   text-align: center;
+  padding: 10px 20px;
 }
 
 #question4 {
@@ -329,6 +350,6 @@ main {
   height: auto;
   width: 80%;
   margin: 0 auto;
-
+  border: none;
 }
 }
