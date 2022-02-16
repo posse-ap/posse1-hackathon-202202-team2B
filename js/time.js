@@ -10,8 +10,8 @@ function finalStage() {
     console.log(time_now_display);
     var time = time_now_display - times1;
     console.log(time);
-    sessionStorage.setItem('times2',time)
-    // window.location.href = '../html/clear.html';
+    sessionStorage.setItem('times2',time);
+    window.location.href = '../html/clear.html';
   }
 }
 
@@ -28,23 +28,24 @@ console.log(minutes + "分" + seconds + "秒");
 //     var time_old = new Date();
 //     var time_old_display = time_old.getTime();
 //     console.log(time_old_display); 
-//     sessionStorage.setItem('times1',time_old_display)
+//     sessionStorage.setItem('times1',time_old_display);
 // });
 
-$(function() {
-  // ハッシュリンク(#)と別ウィンドウでページを開く場合はスルー
-  $('a:not([href^="#"]):not([target])').on('click', function(e){
-    var time_old = new Date();
-    var time_old_display = time_old.getTime();
-    console.log(time_old_display); 
-    sessionStorage.setItem('times1',time_old_display); 
+  // // ハッシュリンク(#)と別ウィンドウでページを開く場合はスルー
+  // $('a:not([href^="#"]):not([target])').on('click', function(e){
 
-    console.log('aaa');
-    e.preventDefault(); // ナビゲートをキャンセル
-    const url = $(this).attr('href'); // 遷移先のURLを取得
-      $('body').addClass('fadeout');  // bodyに class="fadeout"を挿入
-      setTimeout(function(){
-        window.location = url;  // 0.8秒後に取得したURLに遷移
-      }, 2000);
-  }
-)});
+  //   console.log('aaa');
+  //   e.preventDefault(); // ナビゲートをキャンセル
+  //   const url = $(this).attr('href'); // 遷移先のURLを取得
+  //     $('body').addClass('fadeout');  // bodyに class="fadeout"を挿入
+  //     setTimeout(function(){
+  //       window.location = url;  // 0.8秒後に取得したURLに遷移
+  //     }, 2000);
+  // });
+
+function getTime() {
+  var time_old = new Date();
+  var time_old_display = time_old.getTime();
+  console.log(time_old_display); 
+  sessionStorage.setItem('times1',time_old_display);
+}
