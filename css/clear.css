@@ -53,7 +53,9 @@ body{
 .title.-visible span {
   transform: translate(0, 0);
 }
-
+.title span:nth-child(1) {
+  transition-delay: 0.04s;
+}
 .title span:nth-child(2) {
   transition-delay: 0.06s;
 }
