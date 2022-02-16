@@ -127,8 +127,9 @@ start
 #game_start a{
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 30px;
   font-family: 'Sawarabi Mincho';
+  font-family: 'Montserrat Subrayada', sans-serif;
 }
 .start_button_wrapper{
   width: auto;
