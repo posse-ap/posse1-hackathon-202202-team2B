@@ -294,15 +294,13 @@ body.appear .clear_{
 }
 
 .posse_sns_links {
-  display: flex;
   gap: 30px;
+  margin-left: 70%;
 }
 
 footer{
 position: fixed;
 bottom: 0;
-left: 35%;
-
 }
 
 .posse_sns_links img{
