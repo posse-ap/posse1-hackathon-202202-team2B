@@ -108,6 +108,10 @@ start
   height: 100%;
   background: linear-gradient( #2b2b33 0%, #000000 16%, #2d313b 50%, #000000 87%, #000 100%);
   color: #fff;
+  background-image: url('../img/pink_universe.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat repeat; 
   position: relative;
 }
 .start_explain{
@@ -118,6 +122,21 @@ start
   line-height: 4;
   text-align: center;
   font-size: 1rem;
+}
+
+#game_start a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Sawarabi Mincho';
+}
+.start_button_wrapper{
+  width: auto;
+  display: none;
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%,0);
 }
 
 /* タイプライティングアニメーション */
@@ -175,7 +194,7 @@ body.fadeout::after {
 }
 
 .loading_container{
-  top: 30%;
+  top: 50%;
 }
 .loading_container h1 {
   font-size: 30px;
@@ -193,11 +212,15 @@ body.fadeout::after {
 start
 ---------- */
 .start_explain{
-  top: 50%;
+  max-width: 50%;
+  top: 30%;
   transform: translate(-50%,-50%);
-  line-height: 2;
+  line-height: 2.5;
   text-align: center;
   font-size: 1rem;
+}
+.start_explain p{
+  overflow-wrap: normal;
 }
 .start_explain button{
   width: 60%;

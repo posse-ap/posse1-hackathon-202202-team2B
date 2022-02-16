@@ -32,7 +32,7 @@ function TextTypingAnime() {
 
 //loadingの表示
 $(window).on('load',function(){ //ロードされた時
-  //spanタグを追加する
+  //spanタグを追加する(タイピング風アニメーションの分)
 	var element = $(".text_typing");
 	element.each(function () {
 		var text = $(this).html();
@@ -62,6 +62,7 @@ $(window).on('load',function(){ //ロードされた時
   $(".loading_container").fadeOut('slow');//ロゴを1.5秒（1500ms）待機してからフェードアウト
   start_wrapper.fadeIn(2000,function(){
     TextTypingAnime();
+    $(".start_button_wrapper").delay(10000).fadeIn();
   });
   });
 });
@@ -77,26 +78,6 @@ $(function() {
         window.location = url;  // 0.8秒後に取得したURLに遷移
       }, 2000);
   })
-
-// // 画面をスクロールをしたら動かしたい場合の記述
-// $('.tmp').click(function () {
-//   //spanタグを追加する
-// 	var element = $(".text_typing");
-// 	element.each(function () {
-// 		var text = $(this).html();
-// 		var textbox = "";
-// 		text.split('').forEach(function (t) {
-// 			if (t !== " ") {
-// 				textbox += '<span>' + t + '</span>';
-// 			} else {
-// 				textbox += t;
-// 			}
-// 		});
-// 		$(this).html(textbox);
-// 	});
-// 	TextTypingAnime();/* アニメーション用の関数を呼ぶ*/
-//   console.log('aaaaaaaa');
-// });// ここまで画面をスクロールをしたら動かしたい場合の記述
 
 });
 
