@@ -9,8 +9,8 @@ let quit_divs = document.querySelectorAll('.quit_');
 //カウントダウン画面
 $(window).on('load',function(){ //ロードされた時
   $('#main').hide();
-  $('.questions_countdown_container').delay(2500).fadeOut(2500);
-  $('#main').delay(2500).fadeIn();
+  $('.questions_countdown_container').delay(1500).fadeOut(1500);
+  $('#main').delay(3000).fadeIn('slow');
 });
 
 
@@ -145,9 +145,9 @@ $(function(){
     },5200);
     setTimeout(function(){
       $(".remove2").fadeOut();
-    },7900);
+    },7000);
     setTimeout(function(){
       $(".remove3").fadeOut();
-    },11500);
+    },8000);
   });
 });
