@@ -82,7 +82,7 @@ $(window).on('load',function(){ //ロードされた時
 // 効果音
 const music = new Audio('../music/moon_travel.mp3');
 
-document.getElementById('click_me').addEventListener('click', function() {
+document.getElementById('loading').addEventListener('click', function() {
   music.play();
 });
 document.getElementById('game_start').addEventListener('click', function() {
