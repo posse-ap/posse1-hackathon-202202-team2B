@@ -39,22 +39,22 @@ $(function() {
   cmt.hide();
   //スクロールが100に達したらボタン表示
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 30) {
+      if ($(this).scrollTop() > 70) {
           cmt1.fadeIn();
       } else {
           cmt1.fadeOut();
       }
-      if ($(this).scrollTop() > 40) {
+      if ($(this).scrollTop() > 80) {
         cmt2.fadeIn();
       } else {
           cmt2.fadeOut();
       }
-      if ($(this).scrollTop() > 50) {
+      if ($(this).scrollTop() > 90) {
         cmt3.fadeIn();
       } else {
         cmt3.fadeOut();
       }
-      if ($(this).scrollTop() > 60) {
+      if ($(this).scrollTop() > 100) {
         cmt4.fadeIn();
       } else {
         cmt4.fadeOut();
