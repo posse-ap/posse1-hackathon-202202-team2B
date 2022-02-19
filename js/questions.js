@@ -25,6 +25,9 @@ hints[1].addEventListener('click', function display_hint() {
 hints[2].addEventListener('click', function display_hint() {
     hint_divs[2].style.display = 'block';
 })
+hints[3].addEventListener('click', function display_hint() {
+    hint_divs[3].style.display = 'block';
+})
 
 
 
