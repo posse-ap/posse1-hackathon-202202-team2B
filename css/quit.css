@@ -1,67 +1,127 @@
 /* 諦める画面 */
 body{
     margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/quit1.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
 }
 h1{
     display: block;
+    font-family: 'Creepster', cursive;
     background: linear-gradient( #2b2b33 0%, #000000 16%, #2d313b 50%, #000000 87%, #000 100%);
+    background: transparent;
     padding: 3% 0;
     text-align: center;
     font-size: x-large;
     font-weight: bold;
     color: #fff;
     margin-bottom: 5%;
+    letter-spacing: 0.3em;
   }
   
-  .quit_{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-  }
-  .quit_ img{
-    width: 50%;
-    height: 90%;
-  }
-  .quit_ p{
-    font-size: x-large;
-    font-weight: bold;
-    margin-bottom: 15%;
-  }
-  .reset{
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: bold;
-    background: transparent;
-    padding: 9px 15px;
-    border: 3px solid #333;
-    border-radius: 6px;
-    position: relative;
-    z-index: 1;
-    transition: .3s;
-  }
-  .reset::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background: #333;
-    transform-origin: 50% 0%;
-    transform: scaleY(0);
-    transition: transform ease .3s;
-  }
-  .reset:hover {
-    color: #fff;
-  }
-  .reset:hover::before {
-    transform-origin: 50% 100%;
-    transform: scaleY(1);
-  }
-  
-  
+.quit_{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.quit_ img{
+  width: 100%;
+  height: auto;
+  max-width: 45%;
+}
+.quit_ p{
+  font-size: x-large;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15%;
+}
+.reset{
+  text-decoration: none;
+  color: #B67B03;
+  font-size: 16px;
+  font-weight: bold;
+  /* background: transparent; */
+  background-color: rgba(250,250,250, 0.3);
+  padding: 9px 15px;
+  border: 1px solid #B67B03;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+  transition: .3s;
+  text-shadow: 
+		0 0 0.05em #fff,
+		0 0 0.06em #fff,
+		0 0 0.07em #fff,
+		0 0 0.08em #fff,
+		0 0 0.09em #fff,
+		0 0 0.20em #fff,
+		0 0 0.20em #fff,
+		0 0 0.20em #fff,
+		0 0 0.50em #fff;
+}
+.reset::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #333;
+  transform-origin: 50% 0%;
+  transform: scaleY(0);
+  transition: transform ease .3s;
+}
+.reset:hover {
+  color: #fff;
+}
+.reset:hover::before {
+  transform-origin: 50% 100%;
+  transform: scaleY(1);
+}
+.angel {
+  flex-basis: 50%;
+}
+.angel p{
+	text-align:center;
+	line-height:1.3em;
+	font-weight: lighter;
+	color: #B67B03;
+	text-shadow: 
+		0 0 0.05em #fff,
+		0 0 0.06em #fff,
+		0 0 0.07em #fff,
+		0 0 0.08em #fff,
+		0 0 0.09em #fff,
+		0 0 0.20em #fff,
+		0 0 0.20em #fff,
+		0 0 0.20em #fff,
+		0 0 0.50em #fff;
+}
+.devil {
+  flex-basis: 50%;
+}
+.devil p{
+  text-align:center;
+  line-height:1.3em;
+	font-weight: lighter;
+	color: #9D4AC2;
+	text-shadow: 
+		0 0 0.05em #6A1091,
+		0 0 0.06em #6A1091,
+		0 0 0.07em #6A1091,
+		0 0 0.08em #6A1091,
+		0 0 0.09em #6A1091,
+		0 0 0.20em #6A1091,
+		0 0 0.20em #6A1091,
+		0 0 0.20em #6A1091,
+		0 0 0.50em #6A1091;
+}
 
 /* ⬇︎----------------------------------------------スマホ画面用---------------------------------------------------------⬇︎*/
 @media screen and (max-width:480px){
@@ -76,7 +136,8 @@ h1{
   gap: 30px;
 }
 .quit_ img{
-  width: 40%;
+  width: 100%;
+  height: auto;
 }
 .quit_ p{
   font-size: 16px;
@@ -85,7 +146,7 @@ h1{
 .reset{
   font-size: 14px;
   padding: 4px 8px;
-  border: 2px solid #333;
+  border: 1px solid #B67B03;
 }
 
 }

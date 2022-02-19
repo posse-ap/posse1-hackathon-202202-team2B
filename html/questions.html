@@ -114,7 +114,7 @@
   
       <div class="questions_correct" id="check_correct3">
         <p id="correct"><span>正解</span>です！！</p>
-        <button onclick="nextQuestion3()" class="next_question" id="last_button"><a href="#question4">最後に</a></button>
+        <button onclick="nextQuestion3()" class="next_question" id="last_button"><a href="#question4">次に</a></button>
       </div>
       
       <div class="questions_incorrect" id="check_incorrect3">
@@ -140,6 +140,18 @@
     <section id="question4">
       <div class="questions_question_container_plus border_cross">
         <p>---- ３問クリア ----<br>地球にはまだ到達していない<br>初めの目的を思い出せ<br>君は何を…何を見にここへきた？<br>POSAとの再接続を試みよ</p>
+      </div>
+      <div class="questions_hint_quit_container">
+        <button class="questions_hint" id="hint4"><a href="#hint_message4">ヒント</a></button>
+       <!-- こっから下がヒントと諦める押した時に表示される画面 -->
+       <div class="hint_" id="hint_box4">
+        <p id="hint_messsage3">まずは月を探してみよう。
+        </p>
+        <div class="hint_buttons">
+          <button class="hint_go_profile"><a href="https://twitter.com/posse_program" target="_blank">さらにヒントが欲しい方はPOSSETwitterプロフィールへGO!</a></button>
+        </div>
+      </div>
+        <button class="questions_quit" id="quit4"><a href="./quit.html">諦める</a></button>
       </div>
     </section>
   </main>
